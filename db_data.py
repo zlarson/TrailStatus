@@ -19,7 +19,7 @@ def set_sqlite_pragma(dbapi_connection, connection_record):
 # Create the engine
 #----------------------------
 from sqlalchemy import create_engine
-engine = create_engine(config.SQLALCHEMY_DATABASE_URI, echo=True)
+engine = create_engine(config.SQLALCHEMY_DATABASE_URI)
 
 #----------------------------
 # Create the Schema
